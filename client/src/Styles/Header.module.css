@@ -1,0 +1,45 @@
+.navbar{
+    background-color: rgb(147, 112, 219);
+}
+.title{
+    color: white;
+    font-weight: bold;
+    transition:  all 0.2s ease-in-out;
+}
+.title:hover{
+      color: white;
+      transform: scale(1.1);
+}
+.icon{
+    width: 22px;
+    transform: rotate(-10deg) ;
+    margin-left: 0.4rem;
+}
+.right{
+    padding-top: 1.2rem;
+}
+.searchIcon{
+    padding:  0.28rem;
+}
+.link{
+    color: white;
+    font-weight: 800;
+}
+.profile{
+    background-color: rgba(230,230,250);
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+    margin-top:-1.5rem;
+    color: white;
+}
+.logout{
+    color: white;
+    font-size: 1.5rem;
+}
+.mainProfile{
+    width: 52px;
+    border-radius: 50%;
+    height: 52px;
+    margin-top: -1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

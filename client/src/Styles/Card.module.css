@@ -1,0 +1,65 @@
+.card{
+    max-width: 22rem;
+}
+.image{
+    max-width: 100%;
+    height: 250px;
+    z-index: 1;
+}
+.fav{
+    width: 20px;
+    margin-right: 0.8rem;
+}
+.creator{
+   text-align: left;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 5px;
+   background-color: rgb(230,230,250);
+   display: flex;
+   justify-content: space-between;
+}
+.tags{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.tag{
+    color: rgb(126, 126, 126);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.title{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: -1rem;
+}
+.location{
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+    margin-top: -0.6rem;
+}
+.desc{
+    font-size: 15px;
+    margin-top: -0.5rem;
+}
+.link{
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+.emoji{
+    width: 32px;
+    margin-left: 0.8rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

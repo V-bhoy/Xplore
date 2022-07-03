@@ -1,0 +1,14 @@
+.emoji{
+    width: 50px;
+    margin-right: 0.8rem;
+    margin-top: -0.5rem;
+}
+.head {
+    font-weight: bold;
+}
+
+.head>span {
+    margin-left: 1rem;
+    color: rgb(145, 95, 109);
+     text-transform: capitalize; 
+}

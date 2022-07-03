@@ -1,0 +1,72 @@
+.image {
+    max-width: 100%;
+    height: 250px;
+}
+.emoji{
+    width: 45px;
+    margin-right: 0.8rem;
+}
+.head{
+    font-weight: bold;
+}
+.head>span{
+    margin-left: 1rem;
+    color: rgb(145, 95, 109);
+}
+.emojix {
+    width: 32px;
+    margin-left: 0.8rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.title {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: -1rem;
+}
+
+.location {
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+    margin-top: -0.4rem;
+}
+
+.desc {
+    font-size: 15px;
+    margin-top: -0.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.edit{
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+.link {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn{
+    float: right;
+    margin-top: -3.5rem;
+    margin-right: -1rem;
+}
+.tag {
+    color: rgb(100,100,200);
+    font-size: 13px;
+    font-weight: bold;
+}
+.tags{
+    margin-top: -1rem;
+    text-align: left;
+}

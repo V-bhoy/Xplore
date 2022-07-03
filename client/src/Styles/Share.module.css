@@ -1,0 +1,18 @@
+.shareWrapper{
+    margin: auto;
+    max-width: 450px;
+    padding: 15px;
+    margin-top: 120px;
+    align-content: center;
+}
+.title{
+    color: rgb(145, 95, 109);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.emoji{
+    width: 40px;
+    margin-right: 0.8rem;
+    margin-top: -0.2rem;
+}
