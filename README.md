@@ -6,4 +6,7 @@
  
  ## Login Page
  ![Screenshot 2022-08-21 at 2 12 27 AM](https://user-images.githubusercontent.com/83490034/185765420-1bd8776a-4b58-4445-971a-56c51b6fac65.png)
+ 
+ ## Home Page
+ ![Screenshot 2022-08-21 at 2 06 46 AM](https://user-images.githubusercontent.com/83490034/185765595-fa712c0e-97e1-4665-8f22-44000545cd36.png)
 
