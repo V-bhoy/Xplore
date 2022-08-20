@@ -130,7 +130,7 @@ const Header = () => {
             ) : (
               <MDBNavbarItem>
                 <Link to="/login">
-                  <p>Login</p>
+                  <p className={Styles.link}>Login</p>
                 </Link>
               </MDBNavbarItem>
             )}

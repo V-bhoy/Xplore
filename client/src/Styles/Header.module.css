@@ -16,7 +16,10 @@
     margin-left: 0.4rem;
 }
 .right{
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 .searchIcon{
     padding:  0.28rem;
