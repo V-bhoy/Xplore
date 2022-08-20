@@ -19,3 +19,20 @@
 
 ## Edit Explore
 ![Screenshot 2022-08-21 at 2 10 39 AM](https://user-images.githubusercontent.com/83490034/185765645-d75a7c02-8532-4fce-ab40-a44c00728457.png)
+
+##Explore Page Information
+![Screenshot 2022-08-21 at 2 11 16 AM](https://user-images.githubusercontent.com/83490034/185765709-4148aff4-072d-4cc8-80cd-46d1e04f7cee.png)
+
+## Related Explores
+![Screenshot 2022-08-21 at 2 11 21 AM](https://user-images.githubusercontent.com/83490034/185765712-c1596121-9941-4233-8ae8-52d30ed8f8dd.png)
+
+## Explore with tags
+![Screenshot 2022-08-21 at 2 11 45 AM](https://user-images.githubusercontent.com/83490034/185765719-40fccc78-2375-4d0b-bea7-8b7d2119bc63.png)
+![Screenshot 2022-08-21 at 2 12 06 AM](https://user-images.githubusercontent.com/83490034/185765723-0b00d66b-960b-42ca-afee-cc4152e688ab.png)
+
+## Tab View
+![Screenshot 2022-08-21 at 2 09 11 AM](https://user-images.githubusercontent.com/83490034/185765728-5f6f7401-272c-4cdf-b162-d672279c78a1.png)
+
+## Mobile View
+![Screenshot 2022-08-21 at 2 09 51 AM](https://user-images.githubusercontent.com/83490034/185765733-6224cd28-3387-41c1-90c3-be46afef3a8d.png)
+
