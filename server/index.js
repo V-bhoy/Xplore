@@ -11,25 +11,24 @@ dotenv.config();
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Server deployed successfully!");
-});
-
 app.use(morgan("dev"));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(cors());
+
+app.get("/", (res) => {
+    res.send("Deploy successful.")
+})
+
 app.use("/user", userRouter);
 app.use("/xplore", xploreRoute);
 app.use("/profile", profileRoute);
 
 
-const PORT = process.env.PORT || 5000;
-
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT || 5000, () => {
       console.log(`server started successfully on http://localhost:${PORT}/`);
     });
   })
