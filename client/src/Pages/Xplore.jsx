@@ -16,15 +16,13 @@ import {
 } from "../redux/features/xploreSlice";
 import Related from "../Components/Related";
 import Styles from "../Styles/Xplore.module.css";
-import fav from "../Images/fav.png";
-import sad from "../Images/sad.png";
+
 
 const Xplore = () => {
   const dispatch = useDispatch();
   const { xplore, relatedXplores } = useSelector((state) => ({
     ...state.xplore,
   }));
-  const { profile } = useSelector((state) => ({ ...state.auth }));
 
   const { id } = useParams();
   const tags = xplore?.tags;
@@ -42,10 +40,7 @@ const Xplore = () => {
     // eslint-disable-next-line
   }, [id]);
 
-  let value;
-  if (profile) {
-    value = profile.favourites.includes(id);
-  }
+ 
 
   return (
     <div className={Styles.wrapper}>
@@ -62,24 +57,6 @@ const Xplore = () => {
               className={`mask ${Styles.box}`}
               style={{ background: "rgba(4,4,4,0.3)" }}
             >
-              {profile ? (
-                value ? null : (
-                  <p>
-                    Click to add to your favourites
-                    <img src={fav} alt="fav" className={Styles.emoji} />
-                  </p>
-                )
-              ) : (
-                <p>
-                  Please login to fav!
-                  <img
-                    src={sad}
-                    alt="fav"
-                    className={Styles.emoji}
-                    style={{ width: "30px", marginTop: "-0.5rem" }}
-                  />
-                </p>
-              )}
             </div>
           </div>
           <div className={`text-start ${Styles.creator}`}>

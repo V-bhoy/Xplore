@@ -16,7 +16,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.get("/", (res) => {
+app.get("/", (req,res) => {
     res.send("Deploy successful.")
 })
 
@@ -29,7 +29,7 @@ mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
     app.listen(process.env.PORT || 5000, () => {
-      console.log(`server started successfully on http://localhost:${PORT}/`);
+      console.log(`server started successfully on http://localhost:${process.env.PORT || 5000}/`);
     });
   })
   .catch((error) => {
