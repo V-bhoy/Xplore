@@ -5,7 +5,6 @@ import {
   MDBIcon,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBNavbarLink,
   MDBNavbarToggler,
   MDBCollapse,
   MDBNavbarBrand,
@@ -13,7 +12,7 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 import { logOutUser } from "../redux/features/authSlice";
 import { searchxplore } from "../redux/features/xploreSlice";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import Styles from "../Styles/Header.module.css";
 import xplore from "../Images/xplore.png";
 
@@ -87,24 +86,24 @@ const Header = () => {
             className={`mb-2 mb-lg-0 ${Styles.right}`}
           >
             <MDBNavbarItem>
-              <MDBNavbarLink href="/">
+              <Link to="/">
                 <p className={Styles.link}>Home</p>
-              </MDBNavbarLink>
+              </Link>
             </MDBNavbarItem>
             {user?._id && (
               <>
                 <MDBNavbarItem>
-                  <MDBNavbarLink href="/share">
+                  <Link to="/share">
                     <p className={Styles.link}>Share</p>
-                  </MDBNavbarLink>
+                  </Link>
                 </MDBNavbarItem>
                 <MDBNavbarItem>
-                  <MDBNavbarLink href="/dashboard">
+                  <Link to="/dashboard">
                     <p className={Styles.link}>Dashboard</p>
-                  </MDBNavbarLink>
+                  </Link>
                 </MDBNavbarItem>
                 <MDBNavbarItem>
-                  <MDBNavbarLink href="/profile">
+                  <Link to="/profile">
                     {profile?.profileUrl ? (
                       <img
                         src={profile?.profileUrl}
@@ -114,25 +113,25 @@ const Header = () => {
                     ) : (
                       <MDBIcon fas icon="user" className={Styles.profile} />
                     )}
-                  </MDBNavbarLink>
+                  </Link>
                 </MDBNavbarItem>
               </>
             )}
             {user?._id ? (
               <MDBNavbarItem>
-                <MDBNavbarLink href="/">
+                <Link to="/">
                   <MDBIcon
                     icon="sign-out-alt"
                     onClick={handleLogout}
                     className={Styles.logout}
                   />
-                </MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
             ) : (
               <MDBNavbarItem>
-                <MDBNavbarLink href="/login">
+                <Link to="/login">
                   <p>Login</p>
-                </MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
             )}
           </MDBNavbarNav>
