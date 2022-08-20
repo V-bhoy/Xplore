@@ -1,5 +1,25 @@
 # Xplore
- A website thats a complete guide to explore your place
+ A simple basic website thats a small guide to explore your place.
+ You can search for hangout or tourist visits in your city or locality.
+ Also, you can create your own profile and share the pictures and information about the places you visited which would be helpful for others to explore.
+ You can like and add specific places to your favourites too!
+ 
+ ## Deployed link
+ You can visit the site here - https://xplore-app.netlify.app
+ 
+ ## Tech Stack Used
+ MERN Stack
+ > MongoDB
+ > Express
+ > React Framework
+ > NodeJS
+ 
+ ## Features
+ - Authentication is done bt simple method of access token using json web tokens
+ - State management is done using redux toolkit
+ - User can search for places using the search bar or just filter by clicking on the tags.
+ - User can like and add the explres to their favourites
+ - User can also share, update and delete their own explores.
  
  ## Sign Up Page
  ![Screenshot 2022-08-21 at 2 12 20 AM](https://user-images.githubusercontent.com/83490034/185765381-bd8a3ffa-8c41-494f-865e-0600c8ebdf41.png)
