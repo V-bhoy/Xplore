@@ -15,7 +15,7 @@
  > NodeJS
  
  ## Features
- - Authentication is done bt simple method of access token using json web tokens
+ - Authentication is done by simple method of access token using json web tokens
  - State management is done using redux toolkit
  - User can search for places using the search bar or just filter by clicking on the tags.
  - User can like and add the explres to their favourites
