@@ -13,9 +13,8 @@ import { toast } from "react-toastify";
 import { useSelector, useDispatch } from "react-redux";
 import FileBase from "react-file-base64";
 import Styles from "../Styles/EditProfile.module.css";
-import edit from '../Images/edit.png'
+import edit from "../Images/edit.png";
 import { useNavigate } from "react-router-dom";
-
 
 const EditProfile = () => {
   const [profileData, setProfileData] = useState({});
@@ -33,8 +32,8 @@ const EditProfile = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if(value.length>0){
-        setProfileData({ ...profileData, [name]: value });
+    if (value.length > 0) {
+      setProfileData({ ...profileData, [name]: value });
     }
   };
 
@@ -44,17 +43,30 @@ const EditProfile = () => {
         className={Styles.wrapper}
         style={{ backgroundColor: "rgb(230,230,250)" }}
       >
-        <MDBCardTitle style={{color:"rgb(145, 95, 109)", fontWeight: "bold", fontSize:"1.8rem"}}><img src={edit} alt='edit-emoji' className={Styles.emoji}/>Edit your Profile</MDBCardTitle>
+        <MDBCardTitle
+          style={{
+            color: "rgb(145, 95, 109)",
+            fontWeight: "bold",
+            fontSize: "1.8rem",
+          }}
+        >
+          <img src={edit} alt="edit-emoji" className={Styles.emoji} />
+          Edit your Profile
+        </MDBCardTitle>
         <MDBCardBody>
-          <div className="d-flex p-3" >
-            <p style={{fontWeight: "800", marginRight: "2rem"}}>Choose your profile-pic:</p>
+          <div className="d-flex p-3">
+            <p style={{ fontWeight: "800", marginRight: "2rem" }}>
+              Choose your profile-pic:
+            </p>
             <FileBase
               type="file"
               id="profile-image"
               multiple={false}
               onDone={({ base64 }) => {
                 const updatedProfile = { profileUrl: base64 };
-                dispatch(updateprofile({ updatedProfile, userId, toast , navigate}));
+                dispatch(
+                  updateprofile({ updatedProfile, userId, toast, navigate })
+                );
               }}
             />
           </div>
